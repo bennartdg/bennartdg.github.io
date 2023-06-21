@@ -2,6 +2,57 @@ html {
   scroll-behavior: smooth;
 }
 
+:root {
+  --fs-1: 2rem;
+  --fs-2: 1.6rem;
+  --fs-3: 1.2rem;
+  --fs-4: 1rem;
+  --fs-5: .8rem;
+  --fs-6: .7rem;
+  --fs-p: .6rem;
+}
+
+@media (min-width: 45em) {
+  :root {
+    --fs-1: 3rem;
+    --fs-2: 2.4rem;
+    --fs-3: 2rem;
+    --fs-4: 1.6rem;
+    --fs-5: 1.2rem;
+    --fs-6: 1.1rem;
+    --fs-p: 1rem;
+  }
+}
+
+h1 {
+  font-size: var(--fs-1);
+  font-weight: bold;
+}
+
+h2 {
+  font-size: var(--fs-2);
+}
+
+h3 {
+  font-size: var(--fs-3);
+}
+
+h4 {
+  font-size: var(--fs-4);
+}
+
+h5 {
+  font-size: var(--fs-5);
+}
+
+h6 {
+  font-size: var(--fs-6);
+}
+
+p {
+  font-size: var(--fs-p);
+}
+
 ::-webkit-scrollbar {
   width: 10px;
 }
@@ -344,7 +395,7 @@ html {
 }
 
 .glass-card {
-  background: rgba(255,255,255,0.1);
+  background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(5px);
 }
 
