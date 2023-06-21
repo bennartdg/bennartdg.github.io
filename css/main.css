@@ -7,9 +7,9 @@ html {
   --fs-2: 1.6rem;
   --fs-3: 1.2rem;
   --fs-4: 1rem;
-  --fs-5: .8rem;
-  --fs-6: .7rem;
-  --fs-p: .6rem;
+  --fs-5: 0.8rem;
+  --fs-6: 0.7rem;
+  --fs-p: 0.5rem;
 }
 
 @media (min-width: 45em) {
@@ -405,6 +405,18 @@ p {
   border-radius: 0px;
   border-bottom: #fff 1px solid;
   color: #fff;
+}
+
+.navbar-items {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+@media screen and (max-width: 576px) {
+  .navbar-items {
+    display: none;
+  }
 }
 
 .link-main {
