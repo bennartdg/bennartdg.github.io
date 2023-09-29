@@ -5,15 +5,17 @@ html {
 :root {
   --fs-1: 2rem;
   --fs-2: 1.6rem;
-  --fs-3: 1.2rem;
-  --fs-4: 1rem;
-  --fs-5: 0.8rem;
-  --fs-6: 0.7rem;
-  --fs-p: 0.6rem;
+  --fs-3: 1.4rem;
+  --fs-4: 1.2rem;
+  --fs-5: 1rem;
+  --fs-6: 0.9rem;
+  --fs-p: 0.8rem;
   --black: #000000;
   --white: #ffffff;
   --red: #c70101;
   --nblack: #212121;
+  --white-hover: rgba(100, 100, 100, 0.1);
+  --black-hover: rgba(0, 0, 0, 0.7);
 }
 
 @media (min-width: 45em) {
@@ -30,7 +32,7 @@ html {
 
 h1 {
   font-size: var(--fs-1);
-  font-weight: 600;
+  font-weight: 500;
 }
 
 h2 {
@@ -45,14 +47,17 @@ h3 {
 
 h4 {
   font-size: var(--fs-4);
+  font-weight: 500;
 }
 
 h5 {
   font-size: var(--fs-5);
+  font-weight: 500;
 }
 
 h6 {
   font-size: var(--fs-6);
+  font-weight: 500;
 }
 
 p {
@@ -113,11 +118,16 @@ p {
 }
 
 .floating-target {
-  width: 50px;
+  height: 4%;
+  width: 4%;
 }
 
 .text-red {
   color: var(--red);
+}
+
+.bg-red {
+  background-color: var(--red);
 }
 
 .divider {
@@ -146,12 +156,10 @@ p {
 
 .nav-link-hover {
   text-decoration: none;
-  transition: all 500ms ease-in-out;
 }
 
 .nav-link-hover:hover {
-  background-color: rgba(100, 100, 100, 0.1);
-  transition: all 500ms ease-in-out;
+  background-color: var(--white-hover);
 }
 
 .link-white {
@@ -174,10 +182,21 @@ p {
   text-decoration: underline;
 }
 
-.btn-black{
+.btn-black {
   background-color: var(--black);
   color: var(--white);
   border: 0;
   border-radius: 0;
   padding: 10px 15px 10px 15px;
+  transition: all 500ms ease-in-out;
+}
+
+.btn-black:hover {
+  background-color: var(--black-hover);
+  transition: all 500ms ease-in-out;
+}
+
+.square-color {
+  height: 100px;
+  width: 100px;
 }
