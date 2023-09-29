@@ -1,0 +1,183 @@
+html {
+  scroll-behavior: smooth;
+}
+
+:root {
+  --fs-1: 2rem;
+  --fs-2: 1.6rem;
+  --fs-3: 1.2rem;
+  --fs-4: 1rem;
+  --fs-5: 0.8rem;
+  --fs-6: 0.7rem;
+  --fs-p: 0.6rem;
+  --black: #000000;
+  --white: #ffffff;
+  --red: #c70101;
+  --nblack: #212121;
+}
+
+@media (min-width: 45em) {
+  :root {
+    --fs-1: 3rem;
+    --fs-2: 2.4rem;
+    --fs-3: 2rem;
+    --fs-4: 1.6rem;
+    --fs-5: 1.4rem;
+    --fs-6: 1.1rem;
+    --fs-p: 1rem;
+  }
+}
+
+h1 {
+  font-size: var(--fs-1);
+  font-weight: 600;
+}
+
+h2 {
+  font-size: var(--fs-2);
+  font-weight: 500;
+}
+
+h3 {
+  font-size: var(--fs-3);
+  font-weight: 500;
+}
+
+h4 {
+  font-size: var(--fs-4);
+}
+
+h5 {
+  font-size: var(--fs-5);
+}
+
+h6 {
+  font-size: var(--fs-6);
+}
+
+p {
+  font-size: var(--fs-p);
+  font-weight: 300;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar:horizontal {
+  height: 15px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: var(--white);
+}
+
+::-webkit-scrollbar-thumb {
+  transition: 500ms;
+  background-color: var(--black);
+}
+
+.bg-ben {
+  background-image: url("../assets/backgrounds/ben.jpg");
+  background-position: bottom;
+  background-size: cover;
+  /* background-attachment: fixed; */
+}
+
+.bg-otto {
+  background-image: url("../assets/backgrounds/otto.jpg");
+  background-position: top;
+  background-size: cover;
+  /* background-attachment: fixed; */
+}
+
+.bg-sumex {
+  background-image: url("../assets/backgrounds/sumex.jpg");
+  background-position: bottom;
+  background-size: cover;
+  /* background-attachment: fixed; */
+}
+
+.bg-smanti {
+  background-image: url("../assets/backgrounds/smanti.jpg");
+  background-position: bottom;
+  background-size: cover;
+  /* background-attachment: fixed; */
+}
+
+.bg-piket {
+  background-image: url("../assets/backgrounds/piket.jpg");
+  background-position: bottom;
+  background-size: cover;
+  /* background-attachment: fixed; */
+}
+
+.floating-target {
+  width: 50px;
+}
+
+.text-red {
+  color: var(--red);
+}
+
+.divider {
+  border-top: 2px solid var(--black);
+}
+
+.nav-transparent {
+  background: transparent;
+  transition: all 500ms ease-in-out;
+}
+
+.nav-color {
+  background-color: var(--white);
+  transition: all 500ms ease-in-out;
+}
+
+.text-white-navbar {
+  color: var(--white);
+  transition: all 500ms ease-in-out;
+}
+
+.text-black-navbar {
+  color: var(--black);
+  transition: all 500ms ease-in-out;
+}
+
+.nav-link-hover {
+  text-decoration: none;
+  transition: all 500ms ease-in-out;
+}
+
+.nav-link-hover:hover {
+  background-color: rgba(100, 100, 100, 0.1);
+  transition: all 500ms ease-in-out;
+}
+
+.link-white {
+  color: var(--white);
+  text-decoration: none;
+}
+
+.link-white:hover {
+  color: var(--white);
+  text-decoration: underline;
+}
+
+.link-black {
+  color: var(--black);
+  text-decoration: none;
+}
+
+.link-black:hover {
+  color: var(--black);
+  text-decoration: underline;
+}
+
+.btn-black{
+  background-color: var(--black);
+  color: var(--white);
+  border: 0;
+  border-radius: 0;
+  padding: 10px 15px 10px 15px;
+}
