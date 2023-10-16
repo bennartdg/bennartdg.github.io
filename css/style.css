@@ -3,7 +3,7 @@ html {
 }
 
 :root {
-  --fs-1: 2rem;
+  --fs-1: 1.9rem;
   --fs-2: 1.6rem;
   --fs-3: 1.4rem;
   --fs-4: 1.2rem;
@@ -142,6 +142,11 @@ p {
 .nav-color {
   background-color: var(--white);
   transition: all 500ms ease-in-out;
+}
+
+.nav-active-link {
+  font-weight: 700;
+  text-decoration: none;
 }
 
 .text-white-navbar {
